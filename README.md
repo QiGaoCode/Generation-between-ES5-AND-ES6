@@ -61,4 +61,25 @@ Then it works.
 In ES6, we can only use the variable only after we actually declare and define it. 
 
 
+## 2. BLOCK AND IIFEs
+To show Data privacy.
+
+ES6
+```javascript
+{
+    const a = 1;
+    let b = 2;
+    var c = 3;
+}
+
+console.log(a + b);  ==> a is not defined, as we cannot access from the block which show the data privacy just like IIFEs
+console.log(c);
+```
+
+ES5: THE OLD WAY TO USE IIFEs
+```javascript
+（function(){
+    var c = 3;
+})();
+```
 
