@@ -12,6 +12,7 @@ const,let  ==> block-scoped
 function driversLicence5(passedTest) {
     
     if (passedTest) {
+        // function scope
         var firstName = 'John';
         var yearOfBirth = 1990;
     }
@@ -26,6 +27,7 @@ driversLicence5(true);
 function driversLicence6(passedTest) {
     
     if (passedTest) {
+        // block scope
         let firstName = 'John';
         const yearOfBirth = 1990;
     }
@@ -34,6 +36,24 @@ function driversLicence6(passedTest) {
     console.log(firstName + ', born in ' + yearOfBirth + ', is now officially allowed to drive a car.');
 }
 
-driversLicence5(true);
+driversLicence6(true);
 ```
 In ES6, it will shows firstName is not defined. shown error! it will only work in the block.
+
+Then we change to
+```javascript
+function driversLicence6(passedTest) {
+    let firstName;
+    const yearOfBirth = 1990;
+    if (passedTest) {
+        // block scope
+        firstName = 'John'
+    }
+    
+    
+    console.log(firstName + ', born in ' + yearOfBirth + ', is now officially allowed to drive a car.');
+}
+
+driversLicence6(true);
+```
+Then it works.
