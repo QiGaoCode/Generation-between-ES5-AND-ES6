@@ -1,7 +1,7 @@
 # Generation-between-ES5-AND-ES6
 Here is the difference between ES5 and ES6
 
-1. let and const
+## 1. let and const
 
 var in ES5 ==> function-scoped
 
@@ -57,3 +57,8 @@ function driversLicence6(passedTest) {
 driversLicence6(true);
 ```
 Then it works.
+
+In ES6, we can only use the variable only after we actually declare and define it. 
+
+
+
