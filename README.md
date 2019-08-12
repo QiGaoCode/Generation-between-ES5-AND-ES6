@@ -83,3 +83,14 @@ ES5: THE OLD WAY TO USE IIFEs
 })();
 ```
 
+## 3. Strings
+
+```javascript
+
+// ES5
+console.log('This is ' + firstName + ' ' + lastName + '. He was born in ' + yearOfBirth + '. Today, he is ' + calcAge(yearOfBirth) + ' years old.');
+
+// ES6 called Template Literals. Instead of using quote, we use backticks (``). and dollar sign $ and curly brackets{}
+console.log(`This is ${firstName} ${lastName}. He was born in ${yearOfBirth}. Today, he is ${calcAge(yearOfBirth)} years old.`);
+
+```
