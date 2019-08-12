@@ -96,4 +96,12 @@ console.log(`This is ${firstName} ${lastName}. He was born in ${yearOfBirth}. To
 ```
 
 ### new method for strings
+```javascript
+//first name johb, last name Smith
+const n = `${firstName} ${lastName}`;
+console.log(n.startsWith('j'));
+console.log(n.endsWith('Sm'));
+console.log(n.includes('oh'));
+console.log(`${firstName} `.repeat(5));
+```
 
