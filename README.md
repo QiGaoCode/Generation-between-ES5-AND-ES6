@@ -94,3 +94,6 @@ console.log('This is ' + firstName + ' ' + lastName + '. He was born in ' + year
 console.log(`This is ${firstName} ${lastName}. He was born in ${yearOfBirth}. Today, he is ${calcAge(yearOfBirth)} years old.`);
 
 ```
+
+### new method for strings
+
