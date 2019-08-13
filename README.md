@@ -270,3 +270,8 @@ console.log(ages.find(cur => cur >= 18));
 ```
 
 example of Array.from(boxes)
+
+
+## 6. Spread Operator
+
+
