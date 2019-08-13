@@ -274,4 +274,77 @@ example of Array.from(boxes)
 
 ## 6. Spread Operator
 
+...
+
+
+## 7. Rest Parameters.
+same as Spread operator, using ...
+
+```javascript
+//ES5
+function isFullAge5() {
+    //console.log(arguments);
+    var argsArr = Array.prototype.slice.call(arguments);
+    
+    argsArr.forEach(function(cur) {
+        console.log((2016 - cur) >= 18);
+    })
+}
+
+
+//isFullAge5(1990, 1999, 1965);
+//isFullAge5(1990, 1999, 1965, 2016, 1987);
+
+
+//ES6
+function isFullAge6(...years) {
+    years.forEach(cur => console.log( (2016 - cur) >= 18));
+}
+
+isFullAge6(1990, 1999, 1965, 2016, 1987);
+```
+
+
+## 8. New Data Structure called map.
+
+
+## 9 .Class
+
+```javascript
+//ES5
+var Person5 = function(name, yearOfBirth, job) {
+    this.name = name;
+    this.yearOfBirth = yearOfBirth;
+    this.job = job;
+}
+
+Person5.prototype.calculateAge = function() {
+    var age = new Date().getFullYear - this.yearOfBirth;
+    console.log(age);
+}
+
+var john5 = new Person5('John', 1990, 'teacher');
+
+//ES6
+class Person6 {
+    constructor (name, yearOfBirth, job) {
+        this.name = name;
+        this.yearOfBirth = yearOfBirth;
+        this.job = job;
+    }
+    
+    calculateAge() {
+        var age = new Date().getFullYear - this.yearOfBirth;
+        console.log(age);
+    }
+    
+    static greeting() {
+        console.log('Hey there!');
+    }
+}
+
+const john6 = new Person6('John', 1990, 'teacher');
+
+Person6.greeting();
+```
 
