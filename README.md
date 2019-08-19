@@ -8,7 +8,9 @@ var in ES5 ==> function-scoped
 const,let  ==> block-scoped
 
 
+
 ```javascript
+
 function driversLicence5(passedTest) {
     
     if (passedTest) {
